@@ -6,6 +6,7 @@
 
 # Environment
 venv
+.python-version
 
 # Django
 *.log
