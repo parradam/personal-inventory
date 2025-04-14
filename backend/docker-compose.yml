@@ -15,7 +15,7 @@ services:
 
 networks:
   personal-inventory-app:
-    external: false
+    external: true
 
 volumes:
   db:
