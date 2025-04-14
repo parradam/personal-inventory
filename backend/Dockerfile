@@ -14,3 +14,5 @@ RUN pip install -r requirements.txt
 
 # Copy the project
 COPY src/ .
+
+EXPOSE 8000
