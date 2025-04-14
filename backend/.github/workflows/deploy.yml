@@ -23,7 +23,7 @@ jobs:
         run: |
           ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             set -e
-            cd ~/personal-inventory
+            cd ~/personal-inventory-backend
             git pull origin main
             docker compose down
             docker compose up --build -d
