@@ -8,6 +8,7 @@ django-stubs==5.0.2
 django-stubs-ext==5.0.2
 djangorestframework==3.16.0
 filelock==3.18.0
+gunicorn==23.0.0
 identify==2.6.9
 iniconfig==2.0.0
 mypy==1.10.0
