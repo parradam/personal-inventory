@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    command: gunicorn backend.wsgi:application --bind 0.0.0.0:8000
+    restart: always
+    # create a volume in the db directory that is mounted to the container
+    volumes:
+      - ./db:/src/db
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=backend.settings.prod
+    networks:
+      - personal-inventory-app
+
+networks:
+  personal-inventory-app:
+    external: true
+
+volumes:
+  db:
