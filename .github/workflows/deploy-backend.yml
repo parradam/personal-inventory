@@ -1,8 +1,10 @@
-name: Deploy frontend to VPS
+name: Deploy backend to VPS
 
 on:
   push:
     branches: [main]
+    paths:
+      - 'backend/**'
 
 jobs:
   deploy:
@@ -23,7 +25,7 @@ jobs:
         run: |
           ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             set -e
-            cd ~/personal-inventory-frontend
+            cd ~/personal-inventory/backend
             git pull origin main
             docker compose down
             docker compose up --build -d
