@@ -6,8 +6,6 @@ This is a proof of concept for an application to allow the recording of your own
 
 The backend uses Django, DRF, and Pytest. The frontend is developed with Vite, React, Tanstack Router, Axios, React Hook Form, and Tailwind CSS.
 
-Separate repositories have been created for the backend and the frontend.
-
 ## Features
 
 ### Registration with validation
@@ -56,26 +54,26 @@ Separate repositories have been created for the backend and the frontend.
 
 ## Getting started
 
-### Backend
-
-#### Running the development server
-
-Clone the repository.
+### Clone the repository
 
 ```shell
 git clone git@github.com:parradam/personal-inventory-backend.git
 ```
 
+### Backend
+
+#### Running the development server
+
 Install dependencies.
 
-```shell
-pip install -r requirements.txt
-```
-
-Navigate to the `src` directory.
+Navigate to the `src` directory containing `requirements.txt`.
 
 ```shell
 cd src
+```
+
+```shell
+pip install -r requirements.txt
 ```
 
 Run the development server.
@@ -106,10 +104,10 @@ pytest
 git clone git@github.com:parradam/personal-inventory-frontend.git
 ```
 
-Navigate to the `frontend` directory.
+Navigate to the `frontend` directory containing `package.json`.
 
 ```shell
-cd frontend
+cd frontend/frontend
 ```
 
 Run the development server.
