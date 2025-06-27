@@ -9,8 +9,8 @@ import {
 
 const RegisterPage = () => {
   return (
-    <div className="py-40 md:py-20">
-      <div className="w-5/6 md:w-2/5 bg-primary-foreground mx-auto">
+    <div className="py-20 md:py-10">
+      <div className="w-5/6 md:w-1/2 bg-primary-foreground mx-auto">
         <Card>
           <CardHeader>
             <CardTitle>Create an account</CardTitle>
